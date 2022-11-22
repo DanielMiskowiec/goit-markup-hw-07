@@ -507,11 +507,12 @@ h1 h2 h3 h4 h5 h6 p ul {
   fill: var(--blue-color);
 }
 
-.workers-social-links {
+.social__list {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
+  list-style-type: none;
 }
 
 .not-dot {
@@ -553,7 +554,7 @@ h1 h2 h3 h4 h5 h6 p ul {
   width: 20px;
 }
 
-.social-icon-color {
+.social__icon {
   fill: var(--second-color);
   height: 20px;
   width: 20px;
@@ -609,14 +610,14 @@ h1 h2 h3 h4 h5 h6 p ul {
   gap: 70px;
 }
 
-.page-footer__description--socials {
+.page-footer__description--section {
   font-size: 14px;
   font-weight: 700;
 
   color: var(--second-color);
 }
 
-.social-icon-footer {
+.social__link {
   background-color: var(--circle-background-color);
   width: 44px;
   height: 44px;
@@ -630,11 +631,11 @@ h1 h2 h3 h4 h5 h6 p ul {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.social-icon-footer:hover {
+.social__link:hover {
   background-color: var(--blue-color);
 }
 
-.social-icon-footer:hover svg {
+.social__link:hover svg {
   fill: var(--second-color);
 }
 
@@ -717,26 +718,26 @@ h1 h2 h3 h4 h5 h6 p ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.newsletter-footer {
+.newsletter__text {
   font-size: 14px;
   font-weight: 700;
   color: var(--second-color);
   margin-bottom: 20px;
 }
 
-.newsletter {
+.newsletter__form {
   display: flex;
   align-items: flex-end;
   gap: 12px;
   flex-direction: row;
 }
 
-.newsletter-label {
+.newsletter__label {
   display: flex;
   flex-direction: column;
 }
 
-.newsletter-input {
+.newsletter__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -753,7 +754,7 @@ h1 h2 h3 h4 h5 h6 p ul {
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.newsletter-submit {
+.newsletter__submit {
   width: 200px;
   height: 50px;
   background-color: var(--active-color);
@@ -772,7 +773,7 @@ h1 h2 h3 h4 h5 h6 p ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.newsletter-submit:hover {
+.newsletter__submit:hover {
   cursor: pointer;
 }
 
