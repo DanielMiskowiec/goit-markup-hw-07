@@ -147,21 +147,21 @@ button:focus {
   padding-top: 20px;
 }
 
-.images-description-main {
+.grid__name {
   padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
 
-.content-keyword {
+.grid__subtitle {
   color: var(--description-color);
 
   line-height: 1.875;
   font-size: 16px;
 }
 
-.portfolio-button {
+.button--portfolio {
   padding: 6px 22px;
   border-radius: 4px;
 
@@ -173,7 +173,7 @@ button:focus {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button:hover {
+.button--portfolio:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
@@ -324,7 +324,7 @@ button:focus {
   line-height: 1.71;
 }
 
-.text-decoration {
+.button--text {
   font-weight: 500;
   font-size: 16px;
 }
@@ -352,19 +352,19 @@ h1 h2 h3 h4 h5 h6 p ul {
   justify-content: space-around;
 }
 
-.button-list {
+.button__list {
   list-style-type: none;
   display: flex;
   gap: 8px;
   padding-top: 94px;
 }
 
-.header-border {
+.header__border {
   border: 1px solid var(--grey-line-color);
   margin: 0;
 }
 
-.project-list-style {
+.grid__list {
   list-style-type: none;
   display: flex;
   margin-top: 84px;
@@ -375,27 +375,27 @@ h1 h2 h3 h4 h5 h6 p ul {
   row-gap: 30px;
 }
 
-.project-list-child {
+.grid__item {
   background: var(--second-color);
 }
 
-.project-list-child:hover .text-box {
+.grid__item:hover .text__box {
   transform: translateX(0);
   background-color: var(--first-color);
 }
 
-.portfolio-overlay {
+.grid__overlay {
   position: relative;
   overflow: hidden;
   margin: 0;
 }
 
-.portfolio-overlay-second {
+.grid__overlay--second {
   position: relative;
   overflow: hidden;
 }
 
-.text-box {
+.text__box {
   position: absolute;
   bottom: 0;
 
@@ -403,7 +403,7 @@ h1 h2 h3 h4 h5 h6 p ul {
   transition: ease-in 250ms;
 }
 
-.text-portfolio {
+.text__box--description {
   background-color: var(--blue-color);
   font-family: "Roboto";
   font-style: normal;
@@ -468,7 +468,7 @@ h1 h2 h3 h4 h5 h6 p ul {
   gap: 30px;
 }
 
-.extra-padding-portfolio {
+.grid__figcaption {
   padding: 20px 24px;
   border-bottom: 1px solid var(--grey-line-color);
   border-left: 1px solid var(--grey-line-color);
@@ -491,7 +491,7 @@ h1 h2 h3 h4 h5 h6 p ul {
   border-radius: 4px;
 }
 
-.image-offline {
+.grid__image {
   display: block;
 }
 
@@ -538,7 +538,7 @@ h1 h2 h3 h4 h5 h6 p ul {
   cursor: pointer;
 }
 
-.portfolio-overlay:hover {
+.grid__overlay:hover {
   cursor: pointer;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
