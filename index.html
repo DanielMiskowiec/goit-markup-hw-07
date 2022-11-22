@@ -19,54 +19,54 @@
   <body>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-modal" type="button" data-modal-close>X</button>
-        <form class="modal-window">
-        <div role="group" aria-labelledby="form-head">
-          <p id="form-head">Zostaw swoje dane w formularzu poniżej</p>
-          <label class="label-modal">
-            <span class="input-title">Imię</span>
-            <span class="input-icons">
+        <button class="modal--close" type="button" data-modal-close>X</button>
+        <form class="modal__window">
+        <div role="group" aria-labelledby="modal--form">
+          <p id="modal--form">Zostaw swoje dane w formularzu poniżej</p>
+          <label class="modal__label">
+            <span class="modal__title">Imię</span>
+            <span class="modal__input">
               <input type="text" name="username">
-              <svg class="person-icon" width="12px" height="12px">
+              <svg class="modal__input-icon" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-icon-person"></use>
               </svg>
             </span>
           </label>
-          <label class="label-modal">
-            <span class="input-title">Telefon</span>
-            <span class="input-icons">
+          <label class="modal__label">
+            <span class="modal__title">Telefon</span>
+            <span class="modal__input">
               <input type="tel" name="phone_number">
-              <svg class="person-icon" width="13px" height="13px">
+              <svg class="modal__input-icon" width="13px" height="13px">
                 <use href="./images/icons.svg#icon-icon-tel"></use>
               </svg>
             </span>
           </label>
-          <label class="label-modal">
-            <span class="input-title">Email</span>
-            <span class="input-icons">
+          <label class="modal__label">
+            <span class="modal__title">Email</span>
+            <span class="modal__input">
               <input type="email" name="email">
-              <svg class="person-icon" width="15px" height="12px">
+              <svg class="modal__input-icon" width="15px" height="12px">
                 <use href="./images/icons.svg#icon-icon-mail"></use>
               </svg>
             </span>
           </label>
-          <label class="label-modal">
-            <span class="input-title">Komentarz</span>
+          <label class="modal__label">
+            <span class="modal__title">Komentarz</span>
             <textarea class="textarea-resize" name="feedback" placeholder="Wprowadź tekst"></textarea>
           </label>
           
           <label class="checkbox">
             
-            <p class="modal-checkbox-text">
+            <p class="checkbox__text">
               Oświadczam iż akceptuję
-              <a href class="regulations">Regulamin</a>
+              <a href class="checkbox--regulations">Regulamin</a>
               i
-              <a href class="regulations">Politykę prywatności</a>
+              <a href class="checkbox--regulations">Politykę prywatności</a>
               .
             </p>
-            <input class="checkbox-text" name="statute" type="checkbox" value="Accept the regulations and privcy policy">
+            <input class="checkbox__input" name="statute" type="checkbox" value="Accept the regulations and privcy policy">
             <span class="checkmark">
-              <svg class="checkbox-icon">
+              <svg class="checkmark__icon">
                 <use href="./images/icons.svg#icon-icon-check"></use>
               </svg>
             </span>
@@ -76,7 +76,7 @@
             
             
           </label>
-          <button type="submit" class="modal-button-submit">Wyślij</button>
+          <button type="submit" class="modal__button--submit">Wyślij</button>
         </div>
         </form>
       </div>
@@ -424,47 +424,47 @@
             </div>
           </section>
           <div class="container">
-            <section class="our-clients">
-              <h2 class="our-clients-icon">Nasi klienci</h2>
-              <ul class="not-dot clients-social-links">
+            <section class="section">
+              <h2 class="clients__title">Nasi klienci</h2>
+              <ul class=" clients__list">
                 <li>
-                  <a class="clients-box" href="#">
-                    <svg class="client-icons">
+                  <a class="clients__box" href="#">
+                    <svg class="clients__icons">
                       <use width="106" height="60" href="./images/icons.svg#icon-client1"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="clients-box" href="#">
-                    <svg class="client-icons">
+                  <a class="clients__box" href="#">
+                    <svg class="clients__icons">
                       <use width="106" height="60" href="./images/icons.svg#icon-client2"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="clients-box" href="#">
-                    <svg class="client-icons">
+                  <a class="clients__box" href="#">
+                    <svg class="clients__icons">
                       <use width="106" height="60" href="./images/icons.svg#icon-client3"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="clients-box" href="#">
-                    <svg class="client-icons">
+                  <a class="clients__box" href="#">
+                    <svg class="clients__icons">
                       <use width="106" height="60" href="./images/icons.svg#icon-client4"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="clients-box" href="#">
-                    <svg class="client-icons">
+                  <a class="clients__box" href="#">
+                    <svg class="clients__icons">
                       <use width="106" height="60" href="./images/icons.svg#icon-client5"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="clients-box" href="#">
-                    <svg class="client-icons">
+                  <a class="clients__box" href="#">
+                    <svg class="clients__icons">
                       <use width="106" height="60" href="./images/icons.svg#icon-client6"></use>
                     </svg>
                   </a>
