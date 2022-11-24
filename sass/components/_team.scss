@@ -8,48 +8,47 @@
   padding-left: 0;
   justify-content: space-between;
 
+  &__background {
+    background-color: $third-background-color;
+    margin-top: 94px;
+  }
 
-&__background {
-  background-color: var(--third-background-color);
-  margin-top: 94px;
-}
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Roboto";
+    padding-top: 94px;
+    line-height: 1.17;
+  }
 
-&__title {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Roboto";
-  padding-top: 94px;
-  line-height: 1.17;
-}
+  &__figure {
+    margin: 0;
+    padding: 0;
+    background-color: $second-color;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+      0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-&__figure {
-  margin: 0;
-  padding: 0;
-  background-color: var(--second-color);
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-    0px 2px 1px rgb(0 0 0 / 20%);
-  border-radius: 0px 0px 4px 4px;
-}
+  &__figcaption {
+    padding-bottom: 16px;
+    line-height: 1.17;
+  }
 
-&__figcaption {
-  padding-bottom: 16px;
-  line-height: 1.17;
-}
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 30px;
+    text-align: center;
+  }
 
-&__name {
-  font-size: 16px;
-  font-weight: 500;
-  padding-top: 30px;
-  text-align: center;
-}
-
-&__subtitle {
-  font-size: 16px;
-  text-align: center;
-  padding-top: 10px;
-  color: var(--description-color);
-}
+  &__subtitle {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    color: $description-color;
+  }
 }
 
 .social__list {
@@ -77,29 +76,26 @@
 }
 
 .social__content:hover {
-  background-color: var(--blue-color);
+  background-color: $blue-color;
   cursor: pointer;
 
-
-& svg {
-  fill: var(--second-color);
-}
+  & svg {
+    fill: $second-color;
+  }
 }
 
 .social__icon--team {
-  fill: var(--social-links-color);
+  fill: $social-links-color;
   height: 20px;
   width: 20px;
 
-
-&:hover {
-  fill: var(--second-color);
-}
+  &:hover {
+    fill: $second-color;
+  }
 }
 
 .social__icon {
-  fill: var(--second-color);
+  fill: $second-color;
   height: 20px;
   width: 20px;
 }
-

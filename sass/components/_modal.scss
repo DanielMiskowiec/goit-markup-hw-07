@@ -5,35 +5,33 @@
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: var(--what-we-do-words-color);
+  background-color: $what-we-do-words-color;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
 
+  &--close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $what-we-do-words-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
 
-&--close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: var(--what-we-do-words-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
-  cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-
-&__window {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  left: 40px;
-  top: 40px;
-}
+  &__window {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    left: 40px;
+    top: 40px;
+  }
 }
 
 #modal--form {
@@ -54,31 +52,30 @@
   margin-bottom: 10px;
   gap: 4px;
 
-
-& > textarea {
-  width: 448px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-top: 4px;
-  padding-left: 16px;
-  padding-top: 12px;
-  outline-color: var(--active-color);
-  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
+  & > textarea {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 16px;
+    padding-top: 12px;
+    outline-color: $active-color;
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
 }
 
 .modal__title {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: var(--description-color);
+  color: $description-color;
 }
 
 .modal__button--submit {
   width: 200px;
   height: 50px;
-  background: var(--active-color);
+  background: $active-color;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
   border: none;
@@ -88,7 +85,7 @@
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  color: var(--second-color);
+  color: $second-color;
   margin-bottom: 40px;
   cursor: pointer;
 }
@@ -97,20 +94,19 @@
   position: relative;
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
+  &-icon {
+    top: 14px;
+    left: 15px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
 
-&-icon {
-  top: 14px;
-  left: 15px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-& > input {
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding-left: 40px;
-}
+  & > input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 40px;
+  }
 }
 
 .modal__input > svg {
@@ -118,12 +114,11 @@
 }
 
 .modal__input input:focus {
-  outline-color: var(--active-color);
+  outline-color: $active-color;
 
-
-& + svg {
-  fill: var(--active-color);
-}
+  & + svg {
+    fill: $active-color;
+  }
 }
 
 .textarea-resize {
@@ -135,36 +130,34 @@
   position: relative;
   cursor: pointer;
 
+  & input {
+    display: none;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
 
-& input {
-  display: none;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-&--regulations {
-  color: var(--active-color);
-  text-decoration: underline;
-  cursor: pointer;
-}
+  &--regulations {
+    color: $active-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 .checkbox__input:checked + .checkmark {
   border: none;
 
-
-& svg {
-  visibility: visible;
-}
+  & svg {
+    visibility: visible;
+  }
 }
 
 .checkbox__text {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.71;
-  color: var(--description-color);
+  color: $description-color;
   padding-left: 39px;
 }
 
@@ -179,13 +172,12 @@
   cursor: pointer;
   border-radius: 2px;
 
-
-&__icon {
-  height: 15px;
-  width: 16px;
-  visibility: hidden;
-  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
+  &__icon {
+    height: 15px;
+    width: 16px;
+    visibility: hidden;
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
 }
 
 .check-icon {
@@ -193,6 +185,3 @@
   width: 16px;
   visibility: hidden;
 }
-
-
-

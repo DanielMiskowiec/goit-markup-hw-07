@@ -1,7 +1,7 @@
 /* :root {
   --brand-color: #212121;
   --second-color: #ffffff;
-  --active-color: #2196f3;
+  $active-color: #2196f3;
   --description-color: #757575;
   --second-background-color: #2f303a;
   --third-background-color: #f5f4fa;
@@ -22,7 +22,7 @@
 
 /* .contact__item {
   text-decoration: none;
-  color: var(--description-color);
+  color: $description-color;
   display: flex;
 
   line-height: 1.142em;
@@ -38,7 +38,7 @@
 
 /* .footer-contact__link {
   text-decoration: none;
-  color: var(--description-color);
+  color: $description-color;
 
   font-weight: 500;
   font-size: 14px;
@@ -57,7 +57,7 @@
 .footer-contact__link:hover,
 .footer-contact__link:active,
 .footer-contact__link:focus {
-  color: var(--active-color);
+  color: $active-color;
 } */
 
 /* body {
@@ -80,7 +80,7 @@
 } */
 
 /* .logo--highlight {
-  color: var(--active-color);
+  color: $active-color;
 } */
 
 /* .nav__item {
@@ -88,7 +88,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  color: var(--brand-color);
+  color: $brand-color;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
@@ -96,25 +96,25 @@
 /* .nav__item--active::after {
   content: "";
   display: block;
-  border: 2px solid var(--active-color);
+  border: 2px solid $active-color;
   margin-top: 28px;
   border-radius: 2px;
 } */
 /* 
 .nav__item:hover,
 .nav__item:focus {
-  color: var(--blue-color);
+  color: $blue-color;
   text-decoration: none;
 } */
 
 /* .nav__item:hover,
 .nav__item:focus,
 .nav__item:active {
-  color: var(--blue-color);
+  color: $blue-color;
 } */
 
 /* .footer {
-  background-color: var(--second-background-color);
+  background-color: $second-background-color;
 } */
 
 /* .logo--second-color {
@@ -132,7 +132,7 @@
 button:active,
 button:focus {
   color: var(--second-color, white);
-  background-color: var(--active-color);
+  background-color: $active-color;
 } */
 
 /* .address {
@@ -157,7 +157,7 @@ button:focus {
 } */
 
 /* .grid__subtitle {
-  color: var(--description-color);
+  color: $description-color;
 
   line-height: 1.875;
   font-size: 16px;
@@ -169,7 +169,7 @@ button:focus {
 
   line-height: 1.625;
   color: var(--brand-color, black);
-  border: var(--third-background-color);
+  border: $third-background-color;
   font-weight: 500;
   font-size: 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -214,12 +214,12 @@ button:focus {
 } */
 
 /* .content__button {
-  background-color: var(--active-color);
+  background-color: $active-color;
 
   cursor: pointer;
   line-height: 1.875;
   color: var(--brand-color, black);
-  border: none var(--third-background-color);
+  border: none $third-background-color;
   font-weight: 700;
   font-size: 16px;
   font-family: "Roboto";
@@ -252,7 +252,7 @@ button:focus {
 /* .marks__text {
   line-height: 1.71;
   padding-top: 10px;
-  color: var(--description-color);
+  color: $description-color;
   font-size: 14px;
 } */
 
@@ -276,14 +276,14 @@ button:focus {
 } */
 
 /* .team__background {
-  background-color: var(--third-background-color);
+  background-color: $third-background-color;
   margin-top: 94px;
 } */
 
 /* .team__figure {
   margin: 0;
   padding: 0;
-  background-color: var(--second-color);
+  background-color: $second-color;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
@@ -311,7 +311,7 @@ button:focus {
   font-size: 16px;
   text-align: center;
   padding-top: 10px;
-  color: var(--description-color);
+  color: $description-color;
 } */
 
 /* .nav__list {
@@ -362,7 +362,7 @@ button:focus {
 } */
 
 /* .header__border {
-  border: 1px solid var(--grey-line-color);
+  border: 1px solid $grey-line-color;
   margin: 0;
 } */
 
@@ -378,7 +378,7 @@ button:focus {
 } */
 
 /* .grid__item {
-  background: var(--second-color);
+  background: $second-color;
 } */
 
 /* .grid__item:hover .text__box {
@@ -406,14 +406,14 @@ button:focus {
 } */
 
 /* .text__box--description {
-  background-color: var(--blue-color);
+  background-color: $blue-color;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: $second-color;
   padding: 49px 45px 49px 24px;
   margin: 0%;
 } */
@@ -472,9 +472,9 @@ button:focus {
 
 /* .grid__figcaption {
   padding: 20px 24px;
-  border-bottom: 1px solid var(--grey-line-color);
-  border-left: 1px solid var(--grey-line-color);
-  border-right: 1px solid var(--grey-line-color);
+  border-bottom: 1px solid $grey-line-color;
+  border-left: 1px solid $grey-line-color;
+  border-right: 1px solid $grey-line-color;
 } */
 
 /* .team__figcaption {
@@ -484,7 +484,7 @@ button:focus {
 
 /* .marks__image {
   display: flex;
-  background-color: var(--third-background-color);
+  background-color: $third-background-color;
   margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -502,11 +502,11 @@ button:focus {
   justify-content: center;
   align-items: center;
   padding-right: 10px;
-  fill: var(--description-color);
+  fill: $description-color;
 } */
 
 /* .contact__item:hover .contact__icon {
-  fill: var(--blue-color);
+  fill: $blue-color;
 } */
 
 /* .social__list {
@@ -516,8 +516,6 @@ button:focus {
   align-items: center;
   list-style-type: none;
 } */
-
-
 
 /* .social__content {
   display: flex;
@@ -532,7 +530,7 @@ button:focus {
 } */
 
 /* .social__content:hover {
-  background-color: var(--blue-color);
+  background-color: $blue-color;
   cursor: pointer;
 } */
 
@@ -543,17 +541,17 @@ button:focus {
 } */
 
 /* .social__content:hover svg {
-  fill: var(--second-color);
+  fill: $second-color;
 } */
 
 /* .social__icon--team {
-  fill: var(--social-links-color);
+  fill: $social-links-color;
   height: 20px;
   width: 20px;
 } */
 
 /* .social__icon {
-  fill: var(--second-color);
+  fill: $second-color;
   height: 20px;
   width: 20px;
 } */
@@ -579,7 +577,7 @@ button:focus {
 /* .clients__box {
   height: 92px;
   width: 170px;
-  border: 1px solid var(--social-links-color);
+  border: 1px solid $social-links-color;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -590,15 +588,15 @@ button:focus {
 } */
 
 /* .clients__box:hover svg {
-  fill: var(--blue-color);
+  fill: $blue-color;
 } */
 
 /* .clients__box:hover {
-  border: 1px solid var(--blue-color);
+  border: 1px solid $blue-color;
 } */
 
 /* .clients__icons {
-  fill: var(--social-links-color);
+  fill: $social-links-color;
   width: 106px;
   height: 60px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -613,11 +611,11 @@ button:focus {
   font-size: 14px;
   font-weight: 700;
 
-  color: var(--second-color);
+  color: $second-color;
 } */
 
 /* .social__link {
-  background-color: var(--circle-background-color);
+  background-color: $circle-background-color;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -631,19 +629,19 @@ button:focus {
 } */
 
 /* .social__link:hover {
-  background-color: var(--blue-color);
+  background-color: $blue-color;
 } */
 
 /* .social__link:hover svg {
-  fill: var(--second-color);
+  fill: $second-color;
 } */
 
 /* .social__icon--team:hover {
-  fill: var(--second-color);
+  fill: $second-color;
 } */
 
 /* .contact__icon:hover {
-  fill: var(--blue-color);
+  fill: $blue-color;
 } */
 
 /* .social__item {
@@ -668,8 +666,8 @@ button:focus {
   line-height: 1.14;
 
   text-transform: uppercase;
-  color: var(--what-we-do-words-color);
-  background: var(--what-we-do-bg-color);
+  color: $what-we-do-words-color;
+  background: $what-we-do-bg-color;
 } */
 
 /* .backdrop {
@@ -698,7 +696,7 @@ button:focus {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: var(--what-we-do-words-color);
+  background-color: $what-we-do-words-color;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
@@ -710,7 +708,7 @@ button:focus {
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: var(--what-we-do-words-color);
+  background-color: $what-we-do-words-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   cursor: pointer;
@@ -720,7 +718,7 @@ button:focus {
 /* .newsletter__text {
   font-size: 14px;
   font-weight: 700;
-  color: var(--second-color);
+  color: $second-color;
   margin-bottom: 20px;
 } */
 
@@ -756,8 +754,8 @@ button:focus {
 /* .newsletter__submit {
   width: 200px;
   height: 50px;
-  background-color: var(--active-color);
-  color: var(--second-color);
+  background-color: $active-color;
+  color: $second-color;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -809,7 +807,7 @@ button:focus {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: var(--description-color);
+  color: $description-color;
 } */
 
 /* .modal__input {
@@ -830,11 +828,11 @@ button:focus {
 } */
 
 /* .modal__input input:focus + svg {
-  fill: var(--active-color);
+  fill: $active-color;
 } */
 /* 
 .modal__input input:focus {
-  outline-color: var(--active-color);
+  outline-color: $active-color;
 } */
 
 /* .modal__input-icon {
@@ -851,7 +849,7 @@ button:focus {
   margin-top: 4px;
   padding-left: 16px;
   padding-top: 12px;
-  outline-color: var(--active-color);
+  outline-color: $active-color;
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 } */
 
@@ -874,7 +872,7 @@ button:focus {
 } */
 
 /* .checkbox--regulations {
-  color: var(--active-color);
+  color: $active-color;
   text-decoration: underline;
   cursor: pointer;
 } */
@@ -882,7 +880,7 @@ button:focus {
 /* .modal__button--submit {
   width: 200px;
   height: 50px;
-  background: var(--active-color);
+  background: $active-color;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
   border: none;
@@ -892,7 +890,7 @@ button:focus {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  color: var(--second-color);
+  color: $second-color;
   margin-bottom: 40px;
   cursor: pointer;
 } */
@@ -921,7 +919,7 @@ button:focus {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.71;
-  color: var(--description-color);
+  color: $description-color;
   padding-left: 39px;
 } */
 

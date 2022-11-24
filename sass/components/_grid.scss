@@ -10,13 +10,12 @@
 }
 
 .grid__item {
-  background: var(--second-color);
+  background: $second-color;
 
-
-&:hover .text__box {
-  transform: translateX(0);
-  background-color: var(--first-color);
-}
+  &:hover .text__box {
+    transform: translateX(0);
+    background-color: var(--first-color);
+  }
 }
 
 .grid__overlay {
@@ -24,18 +23,16 @@
   overflow: hidden;
   margin: 0;
 
+  &:hover {
+    cursor: pointer;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 
-&:hover {
-  cursor: pointer;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-
-&--second {
-  position: relative;
-  overflow: hidden;
-}
+  &--second {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 .grid__image {
@@ -49,26 +46,25 @@
   transform: translatey(100%);
   transition: ease-in 250ms;
 
-
-&--description {
-  background-color: var(--blue-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.555;
-  letter-spacing: 0.03em;
-  color: var(--second-color);
-  padding: 49px 45px 49px 24px;
-  margin: 0%;
-}
+  &--description {
+    background-color: $blue-color;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+    color: $second-color;
+    padding: 49px 45px 49px 24px;
+    margin: 0%;
+  }
 }
 
 .grid__figcaption {
   padding: 20px 24px;
-  border-bottom: 1px solid var(--grey-line-color);
-  border-left: 1px solid var(--grey-line-color);
-  border-right: 1px solid var(--grey-line-color);
+  border-bottom: 1px solid $grey-line-color;
+  border-left: 1px solid $grey-line-color;
+  border-right: 1px solid $grey-line-color;
 }
 
 .grid__name {
@@ -79,7 +75,7 @@
 }
 
 .grid__subtitle {
-  color: var(--description-color);
+  color: $description-color;
 
   line-height: 1.875;
   font-size: 16px;

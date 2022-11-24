@@ -3,11 +3,10 @@
   margin-left: 15px;
   margin-right: 15px;
 
-
-&__border {
-  border: 1px solid var(--grey-line-color);
-  margin: 0;
-}
+  &__border {
+    border: 1px solid $grey-line-color;
+    margin: 0;
+  }
 }
 
 .page-header {
@@ -27,15 +26,13 @@
   padding-top: 24px;
   padding-bottom: 25px;
 
+  &--highlight {
+    color: $active-color;
+  }
 
-&--highlight {
-  color: var(--active-color);
-}
-
-&--second-color {
-  color: var(--second-color, white);
-}
-
+  &--second-color {
+    color: var(--second-color, white);
+  }
 }
 
 .nav {
@@ -45,13 +42,12 @@
   margin-left: 93px;
   margin-right: 345px;
 
-
-&__list {
-  list-style-type: none;
-  display: flex;
-  gap: 46px;
-  padding-top: 32px;
-}
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 46px;
+    padding-top: 32px;
+  }
 }
 
 .nav__item {
@@ -59,30 +55,29 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  color: var(--brand-color);
+  color: $brand-color;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &--active::after {
+    content: "";
+    display: block;
+    border: 2px solid $active-color;
+    margin-top: 28px;
+    border-radius: 2px;
+  }
 
-&--active::after {
-  content: "";
-  display: block;
-  border: 2px solid var(--active-color);
-  margin-top: 28px;
-  border-radius: 2px;
-}
+  &:hover,
+  &:focus {
+    color: $blue-color;
+    text-decoration: none;
+  }
 
-&:hover,
-&:focus {
-  color: var(--blue-color);
-  text-decoration: none;
-}
-
-&:hover,
-&:focus,
-&:active {
-  color: var(--blue-color);
-}
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blue-color;
+  }
 }
 
 .contact {
@@ -90,13 +85,12 @@
   flex-wrap: nowrap;
   align-items: center;
 
-
-&__list {
-  list-style-type: none;
-  display: flex;
-  padding-left: 0px;
-  gap: 30px;
-}
+  &__list {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    gap: 30px;
+  }
 }
 
 .contact__icon {
@@ -104,18 +98,16 @@
   justify-content: center;
   align-items: center;
   padding-right: 10px;
-  fill: var(--description-color);
+  fill: $description-color;
 
-
-&:hover {
-  fill: var(--blue-color);
+  &:hover {
+    fill: $blue-color;
+  }
 }
-}
-
 
 .contact__item {
   text-decoration: none;
-  color: var(--description-color);
+  color: $description-color;
   display: flex;
 
   line-height: 1.142em;
@@ -124,19 +116,17 @@
   font-size: 14px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
+  &:active,
+  &:focus {
+    color: $active-color;
+  }
 
-&:hover,
-&:active,
-&:focus {
-    color: var(--active-color);
-}
-
-&:hover &-number {
-  padding-left: 50px;
-}
+  &:hover &-number {
+    padding-left: 50px;
+  }
 }
 
 .contact__item:hover .contact__icon {
-  fill: var(--blue-color);
+  fill: $blue-color;
 }
-
