@@ -1,0 +1,71 @@
+.main__title {
+  display: block;
+  margin: auto;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-image1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+
+  text-align: center;
+}
+
+.content {
+  display: block;
+  text-align: center;
+
+  padding: 200px 0;
+
+
+&__text {
+  color: var(--second-color, white);
+
+  font-weight: 900;
+  font-size: 44px;
+}
+
+&__button {
+  background-color: var(--active-color);
+
+  cursor: pointer;
+  line-height: 1.875;
+  color: var(--brand-color, black);
+  border: none var(--third-background-color);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Roboto";
+  text-align: center;
+  border-radius: 4px;
+
+  padding: 10px 41px 10px 42px;
+  margin-top: 30px;
+}
+}
+
+.content__button--style {
+  color: var(--second-color, white);
+
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 4px;
+
+
+&:hover {
+  cursor: pointer;
+}
+}
+
+// do usuniecia
+
+// button:hover,
+// button:active,
+// button:focus {
+//   color: var(--second-color, white);
+//   background-color: var(--active-color);
+// }
