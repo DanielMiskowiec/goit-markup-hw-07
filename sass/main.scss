@@ -1,1 +1,6 @@
-@import "./utils/_variables.scss"
+@import "./utils/variables";
+@import "./utils/backdrop";
+@import "./utils/is-hidden";
+
+@import "./components/header";
+@import "./components/modal";
